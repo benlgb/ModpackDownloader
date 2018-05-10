@@ -1,4 +1,4 @@
-## Minecraft Curseforge 整合包补全下载 2.0
+## Minecraft Curseforge 整合包补全下载器 2.0
 
 ### 一、前提
 
