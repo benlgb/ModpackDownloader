@@ -1,24 +1,27 @@
-## Minecraft Curseforge 整合包下载器
+## Minecraft Curseforge 整合包补全下载 2.0
 
--   环境：Python 3.6
--   使用方法：
+### 一、前提
 
-```cmd
-python ModpackDownloader projectID [fileID]
+- 环境： Python 3.6
+- 包：requests、aiohttp、tqdm
+- 整合包文件（需提前到curseforge下载好整合包文件）
+
+
+### 二、使用方法
+
+```
+python3 ModpackDownloader [Modpack File Path]
 ```
 
--   例子：
-
+例子：
 ```
-python ModpackDownloader 286377 2546758
-
-# 省略fileID，默认查找最新ID
-python ModpackDownloader 286377
-
-# 用整合包名字代替（注意格式）
-python ModpackDownloader modern-skyblock-3-departed
+python3 ModpackDownloader.py FS+Lost+Souls-1.0.3.13-B3.zip
 ```
 
--   注意事项：
-    -   下载完成后整合包位置在`./cache/[modpack_name]/overrides`文件夹中，请将文件夹内所有文件都复制到`.minecraft`文件夹中（覆盖）
-    -   若下载完成后出现以下提示文字，说明存在有模组缺失，请根据链接补全相关模组到`./cache/[modpack_name]/overrides/mods`文件夹中
+完成后将整合包文件夹内的所有文件覆盖到.minecraft文件夹中
+
+
+### 三、注意事项
+
+- 本工具只做了模组的补全
+- 本工具并没有做任何的输入检测，出现错误请自行检查
